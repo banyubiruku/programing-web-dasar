@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parameter Constructor Function</title>
+  </head>
+  <body>
+    <script>
+      //Menambahkan parameter function
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sayHello = function (name) {
+          console.info(`Hello ${name}, my name is ${this.firstName}`);
+        };
+      }
+
+      const arief = new Person("Rohmat", "Arief");
+      arief.sayHello("Plentet");
+
+      const banyu = new Person("Syawalia", "Humaira");
+      banyu.sayHello("Sholihah");
+
+      console.info(arief);
+      console.info(banyu);
+    </script>
+  </body>
+</html>

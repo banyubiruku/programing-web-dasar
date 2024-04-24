@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instance off</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {} //menecek apakah turunan
+
+      const banyu = new Employee();
+      const biru = new Manager();
+
+      console.info(typeof banyu);
+      console.info(typeof biru);
+
+      console.info(banyu instanceof Employee);
+      console.info(banyu instanceof Manager);
+
+      console.info(biru instanceof Employee);
+      console.info(biru instanceof Manager);
+    </script>
+  </body>
+</html>

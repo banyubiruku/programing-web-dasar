@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memberikan property pada construktor function</title>
+  </head>
+  <body>
+    <script>
+      function Person() {
+        //property
+        this.firstName = "";
+        this.lastName = "";
+      }
+      //Objectnya
+      const arief = new Person();
+      arief.firstName = "Arief";
+      arief.lastName = "Budiarto";
+      const banyu = new Person();
+      banyu.firstName = "Rohmat";
+      banyu.lastName = "Saja";
+
+      console.log(arief);
+      console.log(banyu);
+    </script>
+  </body>
+</html>
