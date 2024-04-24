@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {};
+      // menambah atau mengubah
+      //orang["nama"] = "Rohmat Arief Budiarto";
+     // orang["alamat"] = "Banyumas";
+      //orang["umur"] = 30;
+
+      // menghapus
+      delete orang["umur"];
+      console.table(orang);
+
+      const orang = {
+        "nama lengkap": "Rohmat Arief Budiarto",
+        alamat: "Indonesia",
+        umur: 30,
+      };
+
+      console.table(orang);
+
+      // ubah property / attribute
+      // person["nama"] = "Rohmat Arief Budiarto";
+      // person["alamat"] = "Indonesia";
+      // person["umur"] = 30;
+
+      console.info(`Nama : ${orang["nama lengkap"]}`);
+      console.info(`Alamat : ${orang.alamat}`);
+      console.info(`Umur : ${orang.umur}`);
+
+      console.table(orang);
+
+      delete orang["umur"];
+
+      console.table(orang);
+    </script>
+  </body>
+</html>
